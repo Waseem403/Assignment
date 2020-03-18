@@ -1,0 +1,8 @@
+
+    <% if(typeof getsalaries != 'undefined'){ %> <% getsalaries.forEach(function(getsalary) { %>
+        <tr>
+          <td><%= getsalary.name %></td>
+          <td><%= getsalary.email %></td>
+          <td><%= getsalary.salary %></td>
+        </tr>
+  <% }); %> <% } %>

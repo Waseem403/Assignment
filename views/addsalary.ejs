@@ -1,0 +1,85 @@
+<section class="section">
+    <div class="container">
+        <div class="card-panel white lighten-2">
+            <div class="container">
+                <h4 class="center-align">Add Salary</h4>
+                <%- include ('./partials/messages') %>
+                <div class="col s12 m6">
+                    <form action="/addsalary" method="POST">
+                        <div class="row">
+                            <div class="input-field col s12 m12">
+                                <i class="material-icons prefix">person</i>
+                                <input id="Username" 
+                                name="name" 
+                                type="text" 
+                                class="validate" 
+                                required 
+                                autocomplete="off"
+                                value="<%= typeof name != 'undefined' ? name : '' %>"
+                                >
+                                <label for="Username">enter your name</label>
+                            </div>
+                        
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <i class="material-icons prefix">email</i>
+                                <input id="email" 
+                                name="email" 
+                                type="email" 
+                                class="validate" 
+                                required 
+                                autocomplete="off"
+                                value="<%= typeof email != 'undefined' ? email : '' %>"
+                                >
+                                
+                                    <label for="email">enter your email</label>
+                                </div>
+                        </div>
+                     
+
+                        <div class="row">
+                            <div class="input-field col s12 m12">
+                                <i class="material-icons prefix">local_atm</i>
+                                <input 
+                                id="salary" 
+                                name="salary" 
+                                type="number" 
+                                class="validate" 
+                                required 
+                                autocomplete="off"
+                                value="<%= typeof salary != 'undefined' ? salary : '' %>"
+                                > 
+                                <label for="salary">enter your salary</label>
+                            </div>
+                       
+                        </div>
+
+                        <div class="input-field col s6 center-align">
+                            <input id="btn"
+                             name="commit"
+                             type="submit"
+                              value="Add Salary" 
+                              class="btn btn-small deep-purple white-text"
+                              style="text-transform: capitalize;letter-spacing: 2px;"
+                              >
+
+                        </div>
+                        
+                    </form>
+                    <!--end of form-->
+                </div>
+                <!--end of col-->
+            </div>
+
+        </div>
+        <!--end of panel container-->
+    </div>
+    <!--end of panel card-->
+
+
+
+    </div>
+    <!--end of section container-->
+</section>
+<!--end of sectionn-->
